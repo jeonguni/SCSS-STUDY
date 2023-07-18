@@ -1,0 +1,13 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+    
+            // null for all three -> denotes the same path as the SASS file
+            "savePath": "/css",
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": null,
+}
