@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    display: flex;
+    li {
+        border: 1px solid #000;
+        padding: 10px;
+    }
+}
+// nesting(중첩)을 쓰는 이유 -> 부모요소의 클래스명이 바꼈을 때 scss에서 최상위 부모만 변경해 주면 되기 때문에 수정이 용이함.
