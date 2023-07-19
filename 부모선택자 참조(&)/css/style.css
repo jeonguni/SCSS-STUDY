@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+body {
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Button Hover Effect -> css에 컴파일 되는 주석*/
+.btn-outer .btn {
+  color: #fff;
+  text-transform: uppercase;
+  width: 300px;
+  border: 1px solid #fff;
+  display: block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  transition: 0.5s;
+  position: relative;
+}
+.btn-outer .btn:hover {
+  background-color: transparent;
+  border: none;
+}
+.btn-outer .btn:before, .btn-outer .btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.btn-outer .btn:hover::before {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+.btn-outer .btn:hover::after {
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+
+/** 부모선택자 참조의 응용 
+    클래스네임에 중복되는 요소들을 &로 대체해서 사용할 수 있음
+*/
+.font-large {
+  font-size: 60px;
+  color: crimson;
+  text-transform: uppercase;
+}
+.font-medium {
+  font-size: 40px;
+  color: palegreen;
+  text-transform: uppercase;
+}
+.font-small {
+  font-size: 20px;
+  color: paleturquoise;
+  text-transform: uppercase;
+}
