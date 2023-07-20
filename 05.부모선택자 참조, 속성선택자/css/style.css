@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/*Sign In*/
+.singin .sign_inner {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 20px;
+  width: 350px;
+}
+.singin h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0;
+}
+.singin input[type=button],
+.singin input[type=email],
+.singin input[type=password],
+.singin input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 5px;
+}
+.singin input[type=button] {
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.35s;
+}
+.singin input[type=button]:hover {
+  background-color: #badc58;
+  color: #fff;
+}
+.singin input[type=submit] {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+.singin input[type=email]:focus {
+  background-color: lemonchiffon;
+}
