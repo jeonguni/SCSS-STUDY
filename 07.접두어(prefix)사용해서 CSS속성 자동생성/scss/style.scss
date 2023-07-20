@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+    font: {
+        family: 'Montserrat';
+        size: 18px;
+        weight: 500;
+    }
+    line-height: 1.5;
+}
+
+.portfolio p {
+    text: {
+        align: center;
+        transform: uppercase;
+        overflow: hidden;
+    }
+}
+
+/*활용도는 높지 않겠지만 문법적으로는 익숙하게 만들기*/
