@@ -1,0 +1,18 @@
+.frame {
+  margin: 15px;
+}
+
+.btn {
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn.confirm {
+  background-color: yellowgreen;
+}
+.btn.warning {
+  background-color: crimson;
+}

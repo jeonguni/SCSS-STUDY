@@ -1,0 +1,18 @@
+.frame {
+    margin: 15px;
+}
+//공통적으로 쓰는 요소들은 부모요소를 참조해서 만들면 안됨
+.btn {
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    &.confirm{
+        background-color: yellowgreen;
+    }
+    &.warning{
+        background-color: crimson;
+    }
+}
