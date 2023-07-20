@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+.frame {
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    //.heading 을 .frame 밖으로 뺄 수도 있지만 구조가 복잡해지면 at-root를 사용해서 부모 밖으로 뺄 수도 있음
+    @at-root .heading{
+        font-size: 36px;
+        color: crimson;
+        font-weight: normal;
+    }
+}
