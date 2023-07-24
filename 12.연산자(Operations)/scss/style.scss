@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway';
+}
+
+/* 연산자 Operations */
+$fs: 15px;
+$box-margin: 50px;
+
+.frame {
+    border: 1px solid #000;
+    padding: 10px + 10px;
+    //나누기 할때는 괄호로 묶고, 나누는 수는 단위를 제거하고 써야한다
+    //padding: (50px / 10 ) -> 이렇게 써야 5px로 컴파일 됨
+    margin: $box-margin / 2;
+    h1 {
+        font-size: $fs * 3;
+    }
+    p {
+        border: 1px solid #000;
+        margin: $box-margin / 3;
+        font-size: calc($fs * 5)
+    }
+}

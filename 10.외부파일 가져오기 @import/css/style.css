@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* 변수사용 */
+:root {
+  --fontMainColor: #333;
+  --fontSubColor: #888;
+  --lineColor: #ddd;
+  --color-primary: #dce6d6;
+  --color-secondary: #526248;
+}
+
+/* basic_start */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-size: 10px;
+}
+
+html.noscroll {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Pretendard";
+  font-size: 1.3rem;
+  letter-spacing: 0px;
+  color: var(--fontMainColor);
+  min-width: 360px;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+/* - 코드 초기화 - */
+div, p, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, input, button, select, textarea, th, td, img {
+  border: 0px;
+  outline: none;
+}
+
+ul, ol, li, dl, dt, dd {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+input, textarea, button, select {
+  font-family: "Pretendard";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fontMainColor);
+  outline: none;
+}
+
+a:visited {
+  color: var(--fontMainColor);
+}
+
+a:active {
+  color: var(--fontMainColor);
+}
+
+a:hover {
+  color: var(--fontMainColor);
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+}
+
+article, aside, figcaption, figure,
+footer, header, nav, section {
+  display: block;
+}
+
+caption {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+legend {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* - @코드 초기화 - */
+/* @기본설정 */

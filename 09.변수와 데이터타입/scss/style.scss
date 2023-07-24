@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+    font-family: 'Montserrat';
+}
+// variables
+// 변수는 반드시 대시, 언더바를 제외한 틀수기호나 숫자가 들어가면 안됨
+// 줄임말로 써도 되나 모두가 알아볼 수 있도록 써야함
+// ex) header-background-color -> header-bgc (o), h-c(x)
+//특별한 경우가 아니라면 전역변수로 선언해서 사용함
+$primary-btn: royalblue;
+$secondary-btn: yellowgreen;
+$warning-btn: crimson;
+
+/* buttons */
+.btns {
+    .btn {
+        border: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 10px 30px;
+        border-radius: 3px;
+        color: #fff;
+    }
+    .primary {
+        background: $primary-btn;
+    }
+    .secondary {
+        background: $secondary-btn;
+    }
+    .warning {
+        background: $warning-btn;
+    }
+}
+
+// variables
+$color-primary: #222;
+$color-secondary: #333;
+$bgc-item: #eee;
+$portfolio-item-w: 300px;
+$portfolio-item-h: 300px;
+$portfolio-item-bdrs: 10px;
+// 변수로 이미지 경로(문자)는 ""로 묶어야 함
+$portfolio-images-url: "../images/";
+
+/* portfolio */
+.portfolio {
+    padding: 20px;
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+.portfolio-items {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    .portfolio-item {
+        border: 1px solid #000;
+        width: $portfolio-item-w;
+        height: $portfolio-item-h;
+        border-radius: $portfolio-item-bdrs;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        &:nth-child(1) {
+            background-image: url($portfolio-images-url + "t_thumb_SCSS.png");
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  font-family: "Montserrat";
+}
+
+/*
+header h1, section h1, footer h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header h1::before, section h1::before, footer h1::before {
+    content: '';
+    width: 10px;
+    height: 30px;
+    background-color: crimson;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    transform: translateY(3px);
+}
+*/
+/* Common h1 CSS with :is */
+:is(header, section, footer) h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+:is(header, section, footer) h1:before {
+  content: "";
+  width: 10px;
+  height: 30px;
+  background-color: crimson;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 10px;
+  transform: translateY(3px);
+}
