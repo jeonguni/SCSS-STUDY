@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Raleway";
+  font-size: 15px;
+  margin: 0;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6em;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  position: relative;
+}
+.heading span {
+  color: royalblue;
+}
+.heading:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: crimson;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.news-headline {
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  position: relative;
+}
+.news-headline span {
+  color: royalblue;
+}
+.news-headline:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: crimson;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn_wrap {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btn_wrap button {
+  font-size: 15px;
+  width: 120px;
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.btn_wrap button.complete {
+  border: 1px solid skyblue;
+}
+.btn_wrap button.loading {
+  border: 1px solid yellowgreen;
+}
+.btn_wrap button.error {
+  border: 1px solid crimson;
+}
+.btn_wrap button.complete:hover {
+  background-color: skyblue;
+  color: #fff;
+}
+.btn_wrap button.loading:hover {
+  background-color: yellowgreen;
+  color: #fff;
+}
+.btn_wrap button.error:hover {
+  background-color: crimson;
+  color: #fff;
+}

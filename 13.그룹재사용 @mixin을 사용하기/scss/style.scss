@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import "mixin";
+
+body {
+    @include default
+}
+.heading {
+    @include headline;
+}
+.news-headline {
+    @include headline;
+}
+.btn_wrap {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    button {
+        &.complete {
+            border: 1px solid skyblue;
+        }
+        &.loading {
+            border: 1px solid yellowgreen;
+        }
+        &.error {
+            border: 1px solid crimson;
+        }
+        @include notice-button
+    }
+}
