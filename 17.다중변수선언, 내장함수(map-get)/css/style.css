@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+/* Built-in Function : map-get */
+body {
+  background-color: #dfe6e9;
+}
+
+.frame h1 {
+  color: #0984e3;
+  font-size: 45px;
+}
+.frame h2 {
+  color: #0984e3;
+  font-size: 32px;
+}
+.frame h3 {
+  color: #0984e3;
+  font-size: 22px;
+}
