@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    font-family: 'Raleway';
+}
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Copy Selector Style with @extend */
+//@extend 사용으로, html 내부에 반복적인 css이름을 줄일 수 있게됨
+.btn {
+    width: 200px;
+    padding: 7px;
+    background-color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+.order {
+    @extend .btn;
+    background-color: purple;
+    color: #fff;
+}
+.add {
+    @extend .btn;
+    background-color: yellowgreen;
+}
+.checkout {
+    @extend .btn;
+    color: #000;
+    border: 1px solid #000;
+}
