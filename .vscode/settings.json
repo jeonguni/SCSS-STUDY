@@ -8,6 +8,7 @@
             "savePath": "~/../css", //scss 폴더 밖에 css 폴더를 만들어서 컴파일함,
             // "savePath": "~/css" -> scss파일 안에 css폴더를 만들어서 컴파일함,
             // "savePath": "/css" -> 경로의 최상단으로 가서 css폴더를 만들어 컴파일함,
+            //"savePath": "~/../" -> scss폴더가 css안에 들어있을 때, scss폴더 밖, css폴더 안에 컴파일 함,
         }
     ],
     "liveSassCompile.settings.generateMap": false,
