@@ -5,7 +5,7 @@
             "extensionName": ".css",
     
             // null for all three -> denotes the same path as the SASS file
-            "savePath": "~/../css",
+            "savePath": "~/../css", //scss 폴더 밖에 css 폴더를 만들어서 컴파일함,
             // "savePath": "~/css" -> scss파일 안에 css폴더를 만들어서 컴파일함,
             // "savePath": "/css" -> 경로의 최상단으로 가서 css폴더를 만들어 컴파일함,
         }
