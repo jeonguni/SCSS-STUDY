@@ -14,7 +14,7 @@ a {
 }
 
 /* Button Hover Effect -> css에 컴파일 되는 주석*/
-.btn-outer .btn {
+.btn-wrap .btn {
   color: #fff;
   text-transform: uppercase;
   width: 300px;
@@ -26,11 +26,11 @@ a {
   transition: 0.5s;
   position: relative;
 }
-.btn-outer .btn:hover {
+.btn-wrap .btn:hover {
   background-color: transparent;
   border: none;
 }
-.btn-outer .btn:before, .btn-outer .btn:after {
+.btn-wrap .btn:before, .btn-wrap .btn:after {
   content: "";
   position: absolute;
   top: 0;
@@ -41,11 +41,11 @@ a {
   opacity: 0;
   transition: 0.5s;
 }
-.btn-outer .btn:hover::before {
+.btn-wrap .btn:hover::before {
   transform: rotate(45deg);
   opacity: 1;
 }
-.btn-outer .btn:hover::after {
+.btn-wrap .btn:hover::after {
   transform: rotate(-45deg);
   opacity: 1;
 }
@@ -53,17 +53,17 @@ a {
 /** 부모선택자 참조의 응용 
     클래스네임에 중복되는 요소들을 &로 대체해서 사용할 수 있음
 */
-.font-large {
+.btn-big {
   font-size: 60px;
   color: crimson;
   text-transform: uppercase;
 }
-.font-medium {
+.btn-medium {
   font-size: 40px;
   color: palegreen;
   text-transform: uppercase;
 }
-.font-small {
+.btn-small {
   font-size: 20px;
   color: paleturquoise;
   text-transform: uppercase;

@@ -15,7 +15,7 @@ a {
 
 /* Button Hover Effect -> css에 컴파일 되는 주석*/
 // Button Hover Effect -> css에 컴파일되지 않는 주석
-.btn-outer {
+.btn-wrap {
     .btn {
         color: #fff;
         text-transform: uppercase;
@@ -58,8 +58,8 @@ a {
 /** 부모선택자 참조의 응용 
     클래스네임에 중복되는 요소들을 &로 대체해서 사용할 수 있음
 */
-.font {
-    &-large {
+.btn {
+    &-big {
         font-size: 60px;
         color: crimson;
         text-transform: uppercase;

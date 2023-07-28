@@ -10,15 +10,57 @@ body {
 a {
     text-decoration: none;
 }
-.social {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 600px;
-    display: flex;
-    li {
-        border: 1px solid #000;
-        padding: 10px;
+
+.popup_content {
+    width: 500px;
+    height: 700px;
+    position: relative;
+    background-color: #D8BFD8;
+    .top_img_wrap {
+        width: 400px;
+        height: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1d1160;
+    }
+    a {
+        display: block;
+        width: 300px;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #E6E6FA;
+    }
+    .alert {
+        width: 200px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1d1160;
+    }
+    .txt_wrap {
+        width: 200px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1d1160;
+    }
+    .photo_wrap {
+        width: 200px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #720e9e;
     }
 }
 // nesting(중첩)을 쓰는 이유 -> 부모요소의 클래스명이 바꼈을 때 scss에서 최상위 부모만 변경해 주면 되기 때문에 수정이 용이함.
