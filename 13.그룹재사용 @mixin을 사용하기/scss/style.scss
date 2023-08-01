@@ -1,14 +1,19 @@
+@use "./mixin";
+// @use 를 사용할 때는 import 보다 상위에 있어야 한다
+// @use rules must be written before any other rules. 오류가 뜨는 이유!
+// @use 사용시 includ 호출이나 함수호출, 변수 호출 시 @use로 호출한 파일명 앞에 붙여주기
+// '@use "파일이름" as 파일이름을 대체할 이름' 으로 파일 이름 대체할 간단한 이름 사용 가능
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-@import "mixin";
 
 body {
-    @include default
+    @include mixin.default
+    // @use 사용시 includ 호출이나 함수호출, 변수 호출 시 @use로 호출한 파일명 앞에 붙여주기
 }
 .heading {
-    @include headline;
+    @include mixin.headline;
 }
 .news-headline {
-    @include headline;
+    @include mixin.headline;
 }
 .btn_wrap {
     display: flex;
@@ -26,6 +31,29 @@ body {
         &.error {
             border: 1px solid crimson;
         }
-        @include notice-button
+        @include mixin.notice-button
+    }
+}
+.value_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    .box {
+        width: 100px;
+        height: 100px;
+        &.type1 {
+            @include mixin.use-value ('t_thumb_CSS');
+        }
+        &.type2 {
+            @include mixin.use-value ('t_thumb_HTML');
+        }
+        &.type3 {
+            @include mixin.use-value ('t_thumb_SCSS'); 
+            // @include mixin.use-value ('t_thumb_SCSS', $format: "jpg");
+            //인자는 순서대로 받아오기 때문에,
+            //특정 인자값을 넣어주고싶으면 $인자명: "넣어야할 텍스트" 이렇게 써야함
+        }
     }
 }

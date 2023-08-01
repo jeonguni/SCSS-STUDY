@@ -1,0 +1,66 @@
+@use "./mixin";
+@use 'sass:color'; //내장모듈
+
+//if else 문법 사용해서 말줄임만들기
+.if_else_ex {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 100px;
+    p {
+        width: 250px;
+        &.singleLine {
+            @include mixin.ellipsis;
+        }
+        &.multiLine {
+            @include mixin.ellipsis(3);
+        }
+    }
+}
+
+//for 문법 사용
+// for {반복자} from 1 through 5 -> 1~5만큼 반복
+// for {반복자} from 1 to 5 -> 1~4만큼 반복
+.for_ex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    .item {
+        $_length: 10;
+        $_color: #244ad3;
+    
+        @for $i from 1 through $_length {
+            &:nth-child(#{$i}) {
+                z-index: ($_length + 1) - $i;
+                background-color: color.scale($_color, $lightness: $i * -8%);
+            }
+        }
+    
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+//each 문법사용
+// @each {현재요소를 가리키는 이름} in {변수이름}
+.each_ex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    .sns {
+        width: 30px;
+        height: 30px;
+        $list: facebook, youtube, instagram;
+        @each $sns in $list {
+            &.#{$sns} {
+                background: url(../../images/icon-#{$sns}.png) no-repeat center center / contain;
+            }
+        }
+    }
+}
