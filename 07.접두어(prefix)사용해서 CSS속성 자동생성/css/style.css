@@ -11,6 +11,20 @@
   text-align: center;
   text-transform: uppercase;
   text-overflow: hidden;
+  text-decoration: underline;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid purple;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 16px;
+  border-bottom: 1px solid green;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 3px;
+  border-left: 1px solid red;
+  border-right: 1px solid blue;
 }
 
 /*활용도는 높지 않겠지만 문법적으로는 익숙하게 만들기*/

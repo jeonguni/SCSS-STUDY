@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/**
+variables.scss에서 변수를 만들고,
+만들어진 변수를 mixin 에 use 하여 사용한다.
+그리고 만들어진 minxin 을 style.css가 될 scss에 use 하여 사용하면 됨
+*/
 @media all and (max-width: 1024px) {
   .box {
     width: 300px;
