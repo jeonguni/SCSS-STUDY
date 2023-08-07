@@ -20,15 +20,15 @@ $warning-btn: crimson;
         padding: 10px 30px;
         border-radius: 3px;
         color: #fff;
-    }
-    .primary {
-        background: $primary-btn;
-    }
-    .secondary {
-        background: $secondary-btn;
-    }
-    .warning {
-        background: $warning-btn;
+        &.primary {
+            background: $primary-btn;
+        }
+        &.secondary {
+            background: $secondary-btn;
+        }
+        &.warning {
+            background: $warning-btn;
+        }
     }
 }
 

@@ -12,13 +12,13 @@
   border-radius: 3px;
   color: #fff;
 }
-.btns .primary {
+.btns .btn.primary {
   background: royalblue;
 }
-.btns .secondary {
+.btns .btn.secondary {
   background: yellowgreen;
 }
-.btns .warning {
+.btns .btn.warning {
   background: crimson;
 }
 
