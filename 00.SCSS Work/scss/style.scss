@@ -1,0 +1,9 @@
+// reset import
+
+@use "./reset";
+@use "./fonts";
+@use "./variables";
+
+h1 {font-family: 'Raleway';}
+h2 {font-family: variables.$bs-font;}
+h3 {}
