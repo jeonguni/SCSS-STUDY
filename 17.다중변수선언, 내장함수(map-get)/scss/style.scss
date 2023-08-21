@@ -1,43 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
-*{
-    font-family: 'Raleway';
-    box-sizing: border-box;
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
 }
 
 /* Built-in Function : map-get */
 $color: (
-    //이름: 값
-    font-primary: #2d3436,
-    font-secondary: #636e72,
-    font-focus: #0984e3,
-    bgc-primary: #dfe6e9,
-    bgc-secondary: #b2bec3,
+  //이름: 값
+  font-primary: #2d3436,
+  font-secondary: #636e72,
+  font-focus: #0984e3,
+  bgc-primary: #dfe6e9,
+  bgc-secondary: #b2bec3
 );
 $headline-font: (
-    large: 45px,
-    medium: 32px,
-    small: 22px
+  large: 45px,
+  medium: 32px,
+  small: 22px,
 );
 $font-family: (
-    ko: 'Noto Sans KR',
-    en: 'Montserrat'
+  ko: "Noto Sans KR",
+  en: "Montserrat",
 );
 
 //map-get(변수 이름, 변수가 가진 배열 이름)
 body {
-    background-color: map-get($color , bgc-primary );
+  background-color: map-get($color, bgc-primary);
 }
 .frame {
-    h1 {
-        color: map-get($color, font-focus);
-        font-size: map-get($headline-font, large);
-    }
-    h2 {
-        color: map-get($color, font-focus);
-        font-size: map-get($headline-font, medium);
-    }
-    h3 {
-        color: map-get($color, font-focus);
-        font-size: map-get($headline-font, small);
-    }
+  h1 {
+    color: map-get($color, font-focus);
+    font-size: map-get($headline-font, large);
+  }
+  h2 {
+    color: map-get($color, font-focus);
+    font-size: map-get($headline-font, medium);
+  }
+  h3 {
+    color: map-get($color, font-focus);
+    font-size: map-get($headline-font, small);
+  }
 }
